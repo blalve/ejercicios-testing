@@ -1,4 +1,8 @@
 # Repositorio de ejercicios del curso
+Repositorio con la resolucion de los ejercicios de testing
+
+## Probando git
+Editamos el mismo archivo en ramas diferentes 
 
 Esta modificado por Marta 
 
