@@ -1,0 +1,77 @@
+{
+  "id": "9f6a11d6-2804-432e-9293-89673d736c90",
+  "version": "2.0",
+  "name": "navegacion",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "46d673db-6c4f-47e9-af9c-69e7df444e47",
+    "name": "wiki1",
+    "commands": [{
+      "id": "3214cd8f-9a5b-4243-be45-40904d58ccfa",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2683702-b16c-4ab0-865e-1f3d902e63aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4813f871-6cc1-4c65-929c-942d4cdb99b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07596059-dfec-44ea-946e-7dae20ea09e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "software"
+    }, {
+      "id": "caae4815-4788-4a2c-9429-82633a5b0443",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "ba7267d2-06d4-449c-8679-c3f374b69a1b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["46d673db-6c4f-47e9-af9c-69e7df444e47"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}
