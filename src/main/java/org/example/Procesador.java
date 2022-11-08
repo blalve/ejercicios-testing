@@ -10,8 +10,8 @@ public class Procesador {
     }
 
     public Procesador() {
-        this.comando = null;
-       this.proceso = null;
+        this.comando = "";
+       this.proceso = new Proceso();
     }
 
     /*public Procesador(String comando) {
