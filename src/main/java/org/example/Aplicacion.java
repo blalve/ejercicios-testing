@@ -4,7 +4,7 @@ public class Aplicacion {
 
     Controlador controlador;
 
-    public Aplicacion(Controlador controlador) {
+    public Aplicacion() {
         controlador = new Controlador();
     }
 

@@ -1,0 +1,123 @@
+{
+  "id": "c1fcb8c8-4e8e-47b9-9b45-56f0a3db29d2",
+  "version": "2.0",
+  "name": "pactometro",
+  "url": "https://cursosdedesarrollo.com",
+  "tests": [{
+    "id": "17f16fd1-da69-4cc7-a147-f571c82bf8c8",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "d275ea7f-2c7a-4a64-9d65-bdabe13e9026",
+    "name": "pacto1",
+    "commands": [{
+      "id": "d2db80a9-5d12-4750-9c37-9eb91b02fd6e",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3528088-b649-4357-b292-e004d84b0510",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49f4ec0f-a36d-4d72-ab29-d8e77e4f0767",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-BNG > img",
+      "targets": [
+        ["css=#part-BNG > img", "css:finder"],
+        ["xpath=//button[@id='part-BNG']/img", "xpath:idRelative"],
+        ["xpath=//button[16]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f62a36b-88a2-4453-bb81-dae4d86be885",
+      "comment": "",
+      "command": "click",
+      "target": "id=reset",
+      "targets": [
+        ["id=reset", "id"],
+        ["css=#reset", "css:finder"],
+        ["xpath=//button[@id='reset']", "xpath:attributes"],
+        ["xpath=//div[@id='botones']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bee73352-c81a-4710-b6a3-2415d67a8250",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#part-MasPais > img",
+      "targets": [
+        ["css=#part-MasPais > img", "css:finder"],
+        ["xpath=//button[@id='part-MasPais']/img", "xpath:idRelative"],
+        ["xpath=//button[13]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65ff8354-2e5a-4449-857c-0b77e8dee5d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#resultados > .titulo-centrado",
+      "targets": [
+        ["css=#resultados > .titulo-centrado", "css:finder"],
+        ["xpath=//div[@id='resultados']/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6452ee16-62c7-4a66-a3b6-c5d92df7ecc0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#resultados > .titulo-centrado",
+      "targets": [
+        ["css=#resultados > .titulo-centrado", "css:finder"],
+        ["xpath=//div[@id='resultados']/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91e78580-f715-43fa-b034-2402023ee506",
+      "comment": "",
+      "command": "click",
+      "target": "css=#resultados > .titulo-centrado",
+      "targets": [
+        ["css=#resultados > .titulo-centrado", "css:finder"],
+        ["xpath=//div[@id='resultados']/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Resultados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a497421-e81d-492b-bb3f-34a5ba62bcfd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#resultados > .titulo-centrado",
+      "targets": [
+        ["css=#resultados > .titulo-centrado", "css:finder"],
+        ["xpath=//div[@id='resultados']/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Resultados')]", "xpath:innerText"]
+      ],
+      "value": "Resultados"
+    }]
+  }],
+  "suites": [{
+    "id": "a6e785d2-6d34-42d9-9c73-bcccf0d2256b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["17f16fd1-da69-4cc7-a147-f571c82bf8c8"]
+  }],
+  "urls": ["https://cursosdedesarrollo.com/"],
+  "plugins": []
+}

@@ -1,0 +1,174 @@
+{
+  "id": "9f6a11d6-2804-432e-9293-89673d736c90",
+  "version": "2.0",
+  "name": "navegacion",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "46d673db-6c4f-47e9-af9c-69e7df444e47",
+    "name": "wiki1",
+    "commands": [{
+      "id": "3214cd8f-9a5b-4243-be45-40904d58ccfa",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2683702-b16c-4ab0-865e-1f3d902e63aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "793x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4813f871-6cc1-4c65-929c-942d4cdb99b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07596059-dfec-44ea-946e-7dae20ea09e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "software"
+    }, {
+      "id": "caae4815-4788-4a2c-9429-82633a5b0443",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "86fd3ef6-adaf-4241-a206-b131b73db2f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=ooui-php-1",
+      "targets": [
+        ["id=ooui-php-1", "id"],
+        ["name=search", "name"],
+        ["css=#ooui-php-1", "css:finder"],
+        ["xpath=//input[@id='ooui-php-1']", "xpath:attributes"],
+        ["xpath=//div[@id='searchText']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "046838b7-f76c-48f4-b996-7ca32d0035e9",
+    "name": "wiki2",
+    "commands": [{
+      "id": "5a5bfee3-12e2-4c3e-b4d3-a1d52ca83b27",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e0f0dca-f983-4feb-a75e-c7b956af79f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "797x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be828272-82ca-469b-ba11-9face2c4295e",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdcdc1de-3373-47ac-a97b-2f128d113724",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "software"
+    }, {
+      "id": "a004a226-98dd-4f7a-8443-b8bbc6f2de05",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchButton",
+      "targets": [
+        ["id=searchButton", "id"],
+        ["name=go", "name"],
+        ["css=#searchButton", "css:finder"],
+        ["xpath=//input[@id='searchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59bc322-0fbb-4cc7-a3e6-f0de1cba381b",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50a56373-3609-4b21-9119-dd30fd202cc4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) > i > b",
+      "targets": [
+        ["css=p:nth-child(2) > i > b", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/p/i/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'software')]", "xpath:innerText"]
+      ],
+      "value": "software"
+    }]
+  }],
+  "suites": [{
+    "id": "ba7267d2-06d4-449c-8679-c3f374b69a1b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["46d673db-6c4f-47e9-af9c-69e7df444e47"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}
