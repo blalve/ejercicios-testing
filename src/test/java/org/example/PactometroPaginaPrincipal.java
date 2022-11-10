@@ -23,15 +23,9 @@ public class PactometroPaginaPrincipal {
     WebElement noes;
     WebElement abst;
     JavascriptExecutor js;
-    @BeforeEach
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\blalvare\\OneDrive - Capgemini\\Desktop\\chromedriver\\chromedriver.exe");
+    PactometroPaginaPrincipal(WebDriver driver){
+        this.driver = driver;
 
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        js = (JavascriptExecutor) driver;
-        vars = new HashMap<String, Object>();
         navegapagina();
         getElements();
     }

@@ -26,7 +26,7 @@ import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
 
-public class Pacto5Test extends PactometroPaginaPrincipal {
+public class Pacto5Test extends PruebaConfigurada {
  /* private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
@@ -44,6 +44,13 @@ public class Pacto5Test extends PactometroPaginaPrincipal {
   public void tearDown() {
     driver.quit();
   }*/
+ PactometroPaginaPrincipal paginaPrincipal;
+    @BeforeEach
+    @Override
+    public void setUp(){
+        super.setUp();
+        paginaPrincipal = new PactometroPaginaPrincipal(getDriver());
+    }
 
   @Test
   public void pacto5() {
@@ -55,32 +62,32 @@ public class Pacto5Test extends PactometroPaginaPrincipal {
    // driver.manage().window().setSize(new Dimension(802, 824));
 
     // 3 | click | css=#part-PNV > img | 
-    botonPNV.click();
+    paginaPrincipal.botonPNV.click();
 
     // 4 | click | id=abst | 
-  abst.click();
+  paginaPrincipal.abst.click();
     // 5 | assertElementNotPresent | id=#part-PNV | 
     {
-      List<WebElement> elements = atributoPNV;
+      List<WebElement> elements = paginaPrincipal.atributoPNV;
       assert(elements.size() == 0);
     }
     //botonPNV  = driver.findElement(By.id("part-PNV"));
     // System.out.println(botonPP.getAttribute("disabled"));
-    Assertions.assertEquals("true", botonPNV.getAttribute("disabled"));
+    Assertions.assertEquals("true", paginaPrincipal.botonPNV.getAttribute("disabled"));
 
     // 6 | click | css=img:nth-child(3) | 
     //driver.findElement(By.cssSelector("img:nth-child(3)")).click();
     // 7 | click | id=partidos | 
-    partidos.click();
+    paginaPrincipal.partidos.click();
     // 8 | click | id=reset | 
-    reset.click();
+    paginaPrincipal.reset.click();
     // 9 | click | id=num-abst | 
-   numabst.click();
+   paginaPrincipal.numabst.click();
     // 10 | click | id=num-abst | 
-   numabst.click();
+   //numabst.click();
     // 11 | assertText | id=num-abst | 0
-    assertEquals("0", numabst.getText());
+    assertEquals("0", paginaPrincipal.numabst.getText());
     // 12 | click | id=noes | 
-   noes.click();
+   paginaPrincipal.noes.click();
   }
 }
